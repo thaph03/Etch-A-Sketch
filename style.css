@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+}
+
+.header {
+  color: whitesmoke;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  background-color: #5edcee;
+  padding-top: 1.5em;
+}
+
+.main {
+  display: flex;
+  background-color: #5edcee;
+  padding-bottom: 4.85em;
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7em;
+  background-color: #26c5fd;
+  padding: 3em;
+  border-radius: 3em;
+  margin: 3em;
+  margin-left: 15em;
+  border: 2px solid whitesmoke;
+}
+
+#colorPicker {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  margin-left: 4.8em;
+}
+
+#colorPicker::-webkit-color-swatch {
+  border-radius: 50%;
+
+  border: 2px solid whitesmoke;
+}
+
+#colorPicker::-moz-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+#sizeSlider {
+  width: 16em;
+  height: 5px;
+  cursor: pointer;
+}
+
+#sizeValue {
+  font-size: 20px;
+  margin-left: 3.8em;
+}
+
+.settings button {
+  width: 13em;
+  height: 3em;
+  border-radius: 1em;
+  color: black;
+  background-color: whitesmoke;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.grid {
+  margin: auto;
+  margin-right: 42rem;
+  right: 100em;
+  outline: 10px solid #26c5fd;
+  font-size: 0;
+  height: 600px;
+  width: 600px;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.grid-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 1px solid #000;
+  display: inline-block;
+}
+
+.title {
+  font-size: 3em;
+}
+
+.footer {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  font-size: 1.5em;
+  color: whitesmoke;
+  background-color: #5edcee;
+  margin-bottom: 0px;
+  padding-bottom: 0.3em;
+  padding-right: 90px;
+}
