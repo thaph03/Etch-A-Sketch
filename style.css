@@ -29,6 +29,8 @@
   margin: 3em;
   margin-left: 15em;
   border: 2px solid whitesmoke;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #colorPicker {
@@ -41,6 +43,7 @@
   border: none;
   cursor: pointer;
   margin-left: 4.8em;
+  position: relative;
 }
 
 #colorPicker::-webkit-color-swatch {
@@ -54,10 +57,15 @@
   border: none;
 }
 
+#colorPicker:hover {
+  transform: scale(1.07);
+  transition: 0.2s;
+}
 #sizeSlider {
   width: 16em;
   height: 5px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #sizeValue {
@@ -73,18 +81,26 @@
   background-color: whitesmoke;
   font-size: 17px;
   cursor: pointer;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.settings button:hover {
+  transform: scale(1.07);
+  transition: 0.2s;
+}
 .grid {
   margin: auto;
   margin-right: 42rem;
   right: 100em;
-  outline: 10px solid #26c5fd;
+  outline: none;
   font-size: 0;
   height: 600px;
   width: 600px;
   border: none;
   background-color: whitesmoke;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .grid-child {
@@ -108,5 +124,5 @@
   background-color: #5edcee;
   margin-bottom: 0px;
   padding-bottom: 0.3em;
-  padding-right: 90px;
+  padding-right: 80px;
 }
