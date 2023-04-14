@@ -85,6 +85,21 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+#colorBtn.active,
+#rainbowBtn.active,
+#eraserBtn.active {
+  width: 13em;
+  height: 3em;
+  border-radius: 1em;
+  color: whitesmoke;
+  background-color: #5edcee;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.2s;
+}
+
 .settings button:hover {
   transform: scale(1.07);
   transition: 0.2s;
