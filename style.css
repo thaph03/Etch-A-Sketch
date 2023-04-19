@@ -2,6 +2,8 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Pacifico', cursive;
 }
 
@@ -59,7 +61,7 @@
 
 #colorPicker:hover {
   transform: scale(1.07);
-  transition: 0.2s;
+  transition: 0.1s;
 }
 #sizeSlider {
   width: 16em;
@@ -97,14 +99,15 @@
   cursor: pointer;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .settings button:hover {
   transform: scale(1.07);
-  transition: 0.2s;
+  transition: 0.1s;
 }
 .grid {
+  display: grid;
   margin: auto;
   margin-right: 42rem;
   right: 100em;
@@ -118,7 +121,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.grid-child {
+.square {
   margin: 0;
   padding: 0;
   border: none;

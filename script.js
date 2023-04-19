@@ -24,7 +24,21 @@ const btnClickedAffect = function () {
   });
 };
 
-const makeGrid = function (gridSize) {};
+//function to make grids
+function generateSquares(numSquares) {
+  const grid = document.querySelector('.grid');
+
+  grid.innerHTML = '';
+  grid.style.gridTemplateColumns = `repeat(${numSquares}, 1fr)`;
+  grid.style.gridTemplateRows = `repeat(${numSquares}, 1fr)`;
+  for (let i = 0; i < numSquares * numSquares; i++) {
+    const square = document.createElement('div');
+    square.classList.add('square');
+    grid.appendChild(square);
+  }
+}
+
+generateSquares(2);
 
 const main = function () {
   btnClickedAffect();
